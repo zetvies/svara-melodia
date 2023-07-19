@@ -53,12 +53,12 @@
   top:0;
   left:0;
   z-index: 10;
-  opacity: 0;
+  display: none;
   &:hover{
-    opacity: 1;
+    display: block;
   }
   &.active{
-    opacity: 1;
+    display: block;
   }
 }
 
