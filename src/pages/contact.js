@@ -6,7 +6,7 @@ import "../styles/index.scss";
 import contactPage from "../images/ContactPage.png"
 
 const IndexPage = () => {
-  let [synopsisOpen, setSynopsisOpen] = React.useState(false);
+  // let [synopsisOpen, setSynopsisOpen] = React.useState(false);
 
   return (
     <main className="pageStyles">
