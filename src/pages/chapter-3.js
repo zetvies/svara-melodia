@@ -144,15 +144,15 @@ const IndexPage = () => {
       <div className="innerContainer">
         <InteractionPopUp />
         <nav className="headerChapter">
-          <Link to="/">
-            <div className="backButton button">
+          <div className="backButton button">
+            <Link to="/">
               <StaticImage
                 className="headerBackIcon"
                 alt="Icon"
                 src="../images/Back.png"
               />
-            </div>
-          </Link>
+            </Link>
+          </div>
           <div className="chapterTitle ml">
             Chapter 3: Kacapi Suling Sandayana {activePage}
           </div>
