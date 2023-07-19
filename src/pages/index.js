@@ -2,11 +2,7 @@ import * as React from "react";
 import { Link } from "gatsby";
 import "../styles/index.scss";
 
-import cover from "../images/Cover.png";
-import chapter1 from "../images/Chapter-1.png";
-import chapter2 from "../images/Chapter-2.png";
-import chapter3 from "../images/Chapter-3.png";
-// import { StaticImage } from "gatsby-plugin-image";
+import { StaticImage } from "gatsby-plugin-image";
 
 const IndexPage = () => {
   let [synopsisOpen, setSynopsisOpen] = React.useState(false);
@@ -69,8 +65,7 @@ const IndexPage = () => {
           </div>
         </nav>
         <div className="contentContainer padding">
-          <img alt="Svara Melodia Cover" src={cover} />
-          {/* <StaticImage alt="Svara Melodia Cover" src="../images/Cover.png" /> */}
+          <StaticImage alt="Svara Melodia Cover" src="../images/Cover.png" />
           <div className="subtitle">
             Kisah sang dewi musik dari tanah Javasthra
           </div>
@@ -88,30 +83,7 @@ const IndexPage = () => {
             </div>
           </div>
           <div className="flex column">
-            <div style={{ width: "100%", marginBottom: "16px" }}>
-              <img
-                style={{ width: "100%" }}
-                alt="Chapter Cover"
-                src={chapter1}
-              />
-            </div>
-            <div style={{ width: "100%", marginBottom: "16px" }}>
-              <img
-                style={{ width: "100%" }}
-                alt="Chapter Cover"
-                src={chapter2}
-              />
-            </div>
-            <div style={{ width: "100%", marginBottom: "16px" }}>
-              <Link to="/chapter-3">
-                <img
-                  style={{ width: "100%" }}
-                  alt="Chapter Cover"
-                  src={chapter3}
-                />
-              </Link>
-            </div>
-            {/* <StaticImage
+            <StaticImage
               className="chapterItem"
               alt="Svara Melodia Cover"
               src="../images/Chapter-1.png"
@@ -120,18 +92,17 @@ const IndexPage = () => {
               className="chapterItem"
               alt="Svara Melodia Cover"
               src="../images/Chapter-2.png"
-            /> */}
-            {/* <Link to="/chapter-3">
-              <img alt="Chapter Cover" src={chapter3} />
+            />
+            <Link to="/chapter-3">
               <StaticImage
                 className="chapterItem button"
                 alt="Svara Melodia Cover"
                 src="../images/Chapter-3.png"
               />
-            </Link> */}
+            </Link>
           </div>
         </div>
-        <div class="footer" />
+          <div class="footer" />
       </div>
     </main>
   );

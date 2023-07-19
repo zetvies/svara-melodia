@@ -2,9 +2,7 @@ import * as React from "react";
 import { Link } from "gatsby";
 import "../styles/index.scss";
 
-// import { StaticImage } from "gatsby-plugin-image";
-
-import aboutPage from "../images/AboutPage.png"
+import { StaticImage } from "gatsby-plugin-image";
 
 const IndexPage = () => {
   return (
@@ -30,9 +28,7 @@ const IndexPage = () => {
 
         <div className="contentContainer">
           {" "}
-          
-          <img alt="Page" src={aboutPage} />
-          {/* <StaticImage alt="Panel" src="../images/AboutPage.png" /> */}
+          <StaticImage alt="Panel" src="../images/AboutPage.png" />
         </div>
       </div>
     </main>
