@@ -2,7 +2,8 @@ import * as React from "react";
 import { Link } from "gatsby";
 import "../styles/index.scss";
 
-import { StaticImage } from "gatsby-plugin-image";
+// import { StaticImage } from "gatsby-plugin-image";
+import contactPage from "../images/ContactPage.png"
 
 const IndexPage = () => {
   let [synopsisOpen, setSynopsisOpen] = React.useState(false);
@@ -28,7 +29,9 @@ const IndexPage = () => {
           </div>
         </nav>
         <div className="contentContainer">
-          <StaticImage alt="Panel" src="../images/ContactPage.png" />
+          
+        <img alt="Page" src={contactPage} />
+          {/* <StaticImage alt="Panel" src="../images/ContactPage.png" /> */}
         </div>
       </div>
     </main>
