@@ -1,0 +1,84 @@
+.headerChapter {
+  display: flex;
+  background-color: #343933;
+  align-items: center;
+  position: sticky;
+  z-index: 100;
+  top: 0;
+}
+
+.headerBackIcon {
+  height: 24px;
+  width: 24px;
+}
+.headerAudioIcon {
+  height: 18px;
+  width: 18px;
+}
+
+.chapterTitle {
+  color: white;
+  flex: 1;
+  font-size: 16px;
+  margin:8px 0;
+}
+
+.backButton {
+  &:hover {
+    background-color: rgb(0, 0, 0, 0.2);
+  }
+  padding: 10px;
+}
+
+.audioButton {
+  display: flex;
+  overflow: visible;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
+  margin-right: 8px;
+  &.active {
+    background-color: rgb(255, 255, 255, 0.2);
+  }
+}
+
+.panel{
+  position:relative;
+  &.n5s2{
+    height: auto;
+  }
+  &.n7s2{
+    height: auto;
+  }
+}
+.interactivePanel{
+  cursor:pointer;
+  position: absolute;
+  top:0;
+  left:0;
+  z-index: 10;
+  opacity: 0;
+  &:hover{
+    opacity: 1;
+  }
+  &.active{
+    opacity: 1;
+  }
+}
+
+.interactionPopUp{
+  position:fixed;
+  display: none;
+  z-index: 1000;
+  height: 270px;
+  max-height: 54vw;
+  width: 400px;
+  max-width: 80vw;
+  bottom:20px;
+  right:0;
+  &.active{
+    display: block;
+  }
+}
