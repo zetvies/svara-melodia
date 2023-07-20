@@ -13,7 +13,7 @@ const IndexPage = () => {
       <nav className="headerNavigation padding">
           <div className="navigationLink">
             <Link to="/">
-              <div class="full bold">Home</div>
+              <div class="full">Home</div>
             </Link>
           </div>
           <div className="navigationLink center">
@@ -23,7 +23,7 @@ const IndexPage = () => {
           </div>
           <div className="navigationLink">
             <Link to="/contact">
-              <div class="full right">Contact</div>
+              <div class="full bold right">Contact</div>
             </Link>
           </div>
         </nav>

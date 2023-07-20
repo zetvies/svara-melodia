@@ -11,12 +11,12 @@ const IndexPage = () => {
       <nav className="headerNavigation padding">
           <div className="navigationLink">
             <Link to="/">
-              <div class="full bold">Home</div>
+              <div class="full">Home</div>
             </Link>
           </div>
           <div className="navigationLink center">
             <Link to="/about">
-              <div class="full center">About the Artist</div>
+              <div class="full bold center">About the Artist</div>
             </Link>
           </div>
           <div className="navigationLink">
