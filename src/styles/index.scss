@@ -7,7 +7,7 @@
   src: url(./fonts/Optima-Medium.ttf);
 }
 
-img{
+img {
   vertical-align: middle;
 }
 
@@ -18,9 +18,9 @@ body {
   font-size: 16px;
 }
 
-a{
+a {
   text-decoration: none;
-  color:inherit;
+  color: inherit;
   height: 100%;
   width: 100%;
 }
@@ -40,13 +40,12 @@ a{
   justify-content: center;
 }
 
-
-.padding{
-  padding: 0 28px;
+.padding {
+  padding: 0 20px;
 }
 .innerContainer {
   position: relative;
-  top:0;
+  top: 0;
   background: #fdebe4;
   height: 100%;
   min-height: 100vh;
@@ -73,19 +72,23 @@ a{
   align-items: center;
   flex: 1;
   height: 48px;
+  &.center {
+    flex: 2;
+  }
 }
 
-
-.full{
+.full {
   height: 100%;
   width: 100%;
   display: flex;
   align-items: center;
   text-transform: uppercase;
-  &.bold{font-weight: 600;}
+  flex: 1;
+  &.bold {
+    font-weight: 600;
+  }
   &.center {
     justify-content: center;
-    flex: 1.5;
   }
   &.right {
     justify-content: right;
@@ -162,12 +165,12 @@ a{
   font-weight: 300;
 }
 
-.chapterItem{
-    margin:10px 0;
+.chapterItem {
+  margin: 10px 0;
 }
 
-.footer{
-  height:68px;
+.footer {
+  height: 68px;
   width: 100%;
   border-bottom: 150px solid #a87867;
 }
@@ -187,4 +190,3 @@ a{
 .mr {
   margin-right: 4px;
 }
-

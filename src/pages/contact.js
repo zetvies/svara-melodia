@@ -10,20 +10,20 @@ const IndexPage = () => {
   return (
     <main className="pageStyles">
       <div className="innerContainer">
-        <nav className="headerNavigation padding">
+      <nav className="headerNavigation padding">
           <div className="navigationLink">
             <Link to="/">
-              <div class="full">Home</div>
+              <div class="full bold">Home</div>
             </Link>
           </div>
-          <div className="navigationLink">
+          <div className="navigationLink center">
             <Link to="/about">
               <div class="full center">About the Artist</div>
             </Link>
           </div>
           <div className="navigationLink">
             <Link to="/contact">
-              <div class="full bold right">Contact</div>
+              <div class="full right">Contact</div>
             </Link>
           </div>
         </nav>

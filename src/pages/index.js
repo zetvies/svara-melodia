@@ -53,7 +53,7 @@ const IndexPage = () => {
               <div class="full bold">Home</div>
             </Link>
           </div>
-          <div className="navigationLink">
+          <div className="navigationLink center">
             <Link to="/about">
               <div class="full center">About the Artist</div>
             </Link>
