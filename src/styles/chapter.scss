@@ -14,13 +14,17 @@
 .headerAudioIcon {
   height: 18px;
   width: 18px;
+  display: none;
+  &.active {
+    display: block;
+  }
 }
 
 .chapterTitle {
   color: white;
   flex: 1;
   font-size: 16px;
-  margin:8px 0;
+  margin: 8px 0;
 }
 
 .backButton {
@@ -44,35 +48,35 @@
   }
 }
 
-.panel{
-  position:relative;
+.panel {
+  position: relative;
 }
-.interactivePanel{
-  cursor:pointer;
-  position: absolute!important;
-  top:0;
-  left:0;
+.interactivePanel {
+  cursor: pointer;
+  position: absolute !important;
+  top: 0;
+  left: 0;
   z-index: 10;
   opacity: 0;
-  &:hover{
+  &:hover {
     opacity: 1;
   }
-  &.active{
+  &.active {
     opacity: 1;
   }
 }
 
-.interactionPopUp{
-  position:fixed;
+.interactionPopUp {
+  position: fixed;
   opacity: 0;
   z-index: 1000;
   height: 270px;
   max-height: 54vw;
   width: 400px;
   max-width: 80vw;
-  bottom:20px;
-  right:0;
-  &.active{
+  bottom: 20px;
+  right: 0;
+  &.active {
     opacity: 1;
   }
 }

@@ -154,25 +154,22 @@ const IndexPage = () => {
             </Link>
           </div>
           <div className="chapterTitle ml">
-            Chapter 3: Kacapi Suling Sandayana {activePage}
+            Chapter 3: Kacapi Suling Sandayana
           </div>
           <div
             className={`audioButton button ${audioOn ? "active" : ""}`}
             onClick={() => setAudioOn(!audioOn)}
           >
-            {audioOn ? (
-              <StaticImage
-                className="headerAudioIcon"
-                alt="Icon"
-                src="../images/MusicNotes_Green.png"
-              />
-            ) : (
-              <StaticImage
-                className="headerAudioIcon"
-                alt="Icon"
-                src="../images/MusicNotes_White.png"
-              />
-            )}
+            <StaticImage
+              className={`headerAudioIcon ${audioOn ? "active" : ""}`}
+              alt="Icon"
+              src="../images/MusicNotes_Green.png"
+            />
+            <StaticImage
+              className={`headerAudioIcon ${!audioOn ? "active" : ""}`}
+              alt="Icon"
+              src="../images/MusicNotes_White.png"
+            />
           </div>
         </nav>
         <div class="panel n1">
@@ -299,11 +296,9 @@ const IndexPage = () => {
           <StaticImage alt="Panel" src="../images/panels/13.png" />
         </div>
         <div class="button" onClick={() => setLikeActive(!likeActive)}>
-          {likeActive ? (
-            <StaticImage alt="Panel" src="../images/Chapter-Like-Active.png" />
-          ) : (
-            <StaticImage alt="Panel" src="../images/Chapter-Like.png" />
-          )}
+          <StaticImage style={{display:likeActive?"block":"none"}} alt="Panel" src="../images/Chapter-Like-Active.png" />
+
+          <StaticImage style={{display:!likeActive?"block":"none"}} alt="Panel" src="../images/Chapter-Like.png" />
         </div>
       </div>
     </main>
